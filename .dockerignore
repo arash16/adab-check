@@ -1,0 +1,27 @@
+.editorconfig
+.dockerignore
+.gitlab-ci
+.gitignore
+__pycache__
+Dockerfile
+docker-compose.yml
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# IDE
+.idea
+.vscode
+
+# More
+CONTRIBUTING.md
+README.md
+.cache
+.serverless
