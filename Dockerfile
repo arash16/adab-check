@@ -12,4 +12,6 @@ ADD fetch-models.py /app/
 RUN python /app/fetch-models.py
 
 ADD . /app
+
+HEALTHCHECK --interval=20s --timeout=10s --retries=3 CMD curl -sS 127.0.0.1 || exit 1
 CMD ["sh", "run.sh"]
